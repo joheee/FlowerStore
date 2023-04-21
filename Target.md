@@ -1,21 +1,21 @@
 # TEMA TOKO BUNGA
 
 # TERMS AND CONDITIONS
-    [] halaman home.php
+    [v] halaman home.php
     [] connect mysql
-    [] halaman css
+    [v] halaman css
 
 # PERSYARATAN
-    [] ada 8 item yang dijual ke pengunjung
-    [] ada gambar untuk tiap item yang dijual
-    [] semua info ditampilkan dari db
-    [] pake table html
-    [] taroh lencana HTML5 dan CSS3 di tiap halaman web
+    [v] ada 8 item yang dijual ke pengunjung
+    [v] ada gambar untuk tiap item yang dijual (dari url ajah)
+    [v] semua info ditampilkan dari db
+    [v] pake table html
+    [v] taroh lencana HTML5 dan CSS3 di tiap halaman web
 
 # HALAMAN BERANDA (HOME.PHP)
-    [] link pertama untuk pengguna membeli item
+    [v] link pertama untuk pengguna membeli item
     [] link kedua buat admin untuk mencantumkan semua pembelian
-    [] link ketiga buat admin untuk mencantumkan semua pelanggan
+    [v] link ketiga buat admin untuk mencantumkan semua pelanggan
 
 #  HALAMAN SEMUA PEMBELIAN
     [] detail barang yang telah dibeli
@@ -24,10 +24,10 @@
         [] id barang
 
 # HALAMAN SEMUA PELANGGAN
-    [] detail semua pelanggan di database
-    [] tampilin
-        [] nama pengunjung
-        [] id pengunjung
+    [v] detail semua pelanggan di database
+    [v] tampilin
+        [v] nama pengunjung
+        [v] id pengunjung
 
 # HALAMAN PEMBELIAN
     [] tampilin item dan harga tiap item yang dijual
@@ -45,3 +45,13 @@
 
 # CATATAN
     [] harus produce model data untuk mencerminkan kebutuhan ini
+
+
+# DATABASE
+    ms_flower
+        [] flower_id
+        [] flower_image
+        [] flower_title
+        [] flower_price
+        [] flower_desc
+    
