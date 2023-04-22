@@ -1,5 +1,6 @@
 <?php
     include 'controller/getAllFlower.php';
+    include 'controller/storeCustomer.php';
     session_start();
     $res = getAllFlower();
 ?>
@@ -20,7 +21,7 @@
             Flower Store
         </a>
         <div class="navbar-inner-flex">
-            <a href="" class="default-a-tag">Checkout History</a>
+            <a href="transaction.php" class="default-a-tag">Checkout History</a>
             <a href="customer.php" class="default-a-tag">Customer Detail</a>
         </div>
     </div>
@@ -37,8 +38,8 @@
 
                 if(isset($_POST['checkout'])){
                     if(!empty($_POST['customer_name'])){
-                        var_dump($_POST['customer_name']);
-                        
+                        $name = $_POST['customer_name'];
+                        storeCustomer($name);
                     } else {
                         ?>
                             <script>

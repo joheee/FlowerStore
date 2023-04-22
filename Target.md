@@ -55,3 +55,4 @@
         [] flower_price
         [] flower_desc
     
+select sum(mf.flower_price * t.ammount) as `total_price`, mc.customer_name from transaction t join ms_flower mf on t.flower_id = mf.flower_id join ms_customer mc on t.customer_id = mc.customer_id where mc.customer_id = 12 group by mc.customer_name
